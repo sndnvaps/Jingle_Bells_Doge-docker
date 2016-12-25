@@ -1,0 +1,11 @@
+version: '2'
+services:
+ Jingle_Bells_Doge:
+  image: httpd:2.4
+  expose:
+        - 80
+  ports:
+        - "80:80"
+  restart: always
+  volumes:
+    - ./Jingle_Bells_Doge:/usr/local/apache2/htdocs:rw
